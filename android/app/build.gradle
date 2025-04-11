@@ -1,0 +1,50 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android" // For Kotlin support
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+    id 'com.google.gms.google-services' // For Firebase services
+}
+
+android {
+    namespace = "com.example.flutter_application_1" // Define your namespace here
+
+    compileSdkVersion flutter.compileSdkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId "com.example.flutter_application_1" // Define your app package name here
+        minSdkVersion 23 // Explicitly set to 23 as Firebase Auth requires it
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            // Enables resource shrinking
+            shrinkResources true
+            // Enables code shrinking, obfuscation, and optimization
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10" // Defined Kotlin version
+    implementation platform('com.google.firebase:firebase-bom:33.8.0')
+    implementation 'com.google.firebase:firebase-auth' // Example Firebase module
+}

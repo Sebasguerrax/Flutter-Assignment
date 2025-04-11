@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Thunderbolt Roller Coaster",
+      "description": "A thrilling ride with high-speed drops and twists.",
+      "wait_time": "15 mins",
+      "image": "assets/images/rollercoaster.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ferris Wheel",
+      "description": "Enjoy a scenic view of the park from above.",
+      "wait_time": "5 mins",
+      "image": "assets/images/ferris_wheel.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Haunted Mansion",
+      "description": "Experience spine-chilling moments in our haunted house.",
+      "wait_time": "20 mins",
+      "image": "assets/images/haunted_mansion.jpg"
+    }
+  ]
+  

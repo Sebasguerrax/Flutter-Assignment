@@ -1,0 +1,23 @@
+[
+    {
+      "name": "The Pizza Place",
+      "description": "Delicious and cheesy pizzas.",
+      "imageUrl": "assets/images/pizza_place.jpg"
+    },
+    {
+      "name": "Bertie's Burgers",
+      "description": "Juicy burgers with fresh ingredients.",
+      "imageUrl": "assets/images/berties_burgers.jpg"
+    },
+    {
+      "name": "Sushi World",
+      "description": "Fresh sushi and sashimi.",
+      "imageUrl": "assets/images/sushi_world.jpg"
+    },
+    {
+      "name": "Taco Haven",
+      "description": "Authentic Mexican tacos and more.",
+      "imageUrl": "assets/images/taco_haven.jpg"
+    }
+  ]
+  
